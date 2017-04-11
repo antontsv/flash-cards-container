@@ -1,0 +1,21 @@
+#!/usr/bin/env awesome-bash
+# vim: ft=sh:
+
+awesome_shell_help <<_HELP_
+Script help prepares container for flash cards repository
+
+_HELP_
+
+#awesome-shell ref:5b4389e
+
+required_utility git
+required_utility docker
+required_utility go
+
+WORKDIR="$awesome_shell_script_dir/../workdir"
+
+[ -e "$WORKDIR"  ] || silent_exec_with_title "Cloning antontsv/flashcards into $WORKDIR dir" "git clone https://github.com/antontsv/flash-cards $WORKDIR"
+
+silent_exec_with_title "Building Go executable for Linux" "GOOS=linux go build ."
+msg "Building docker image..."
+verbose_exec "docker build ."
