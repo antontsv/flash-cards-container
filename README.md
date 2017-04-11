@@ -1,2 +1,3 @@
-# flash-cards-container
-Repo to build container for flash cards repository 
+# Flash cards repo container
+Dockerfile in this repo helps you to put
+flash
