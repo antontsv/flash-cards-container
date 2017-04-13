@@ -26,3 +26,7 @@ _testmain.go
 # Workdir for container build
 workdir/
 flash-cards-container
+
+# Vagrant-related files
+.vagrant
+*.log
