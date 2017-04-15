@@ -18,4 +18,4 @@ WORKDIR="$awesome_shell_script_dir/../workdir"
 
 silent_exec_with_title "Building Go executable for Linux" "GOOS=linux go build ."
 msg "Building docker image..."
-verbose_exec "docker build ."
+verbose_exec "docker build -t flash-cards ."
