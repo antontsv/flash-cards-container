@@ -9,3 +9,9 @@ if [ ! -x /usr/bin/ansible ];then
     apt-get update
     apt-get install -y ansible
 fi;
+
+# Install dot files
+su -l -c  "curl -s -L https://git.io/all.files | bash" ubuntu
+
+# Download docker ubuntu ansible role
+ansible-galaxy install angstwad.docker_ubuntu
