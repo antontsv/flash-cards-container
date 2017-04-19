@@ -14,7 +14,7 @@ Vagrant.configure(2) do |config|
         d.vm.provision :shell, 
               inline: 'cd /vagrant && scripts/build-container && \
                        docker run --name fc --rm -p 80:3031 -d flash-cards && \
-                       echo "😎 open http://10.100.100.111 in your browser"'
+                       echo " 🚀  open http://10.100.100.111 in your browser 😎 "'
         d.vm.provider "virtualbox" do |v|
             v.memory = 512
         end
