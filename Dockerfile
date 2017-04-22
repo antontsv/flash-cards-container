@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM alpine:latest
 MAINTAINER Anton Tsviatkou "https://git.io/anton"
 
 RUN mkdir -p /var/www
