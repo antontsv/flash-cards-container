@@ -10,6 +10,6 @@ go:
 
 install:
   - git clone https://github.com/antontsv/awesome-shell
-  - awesome-shell/INSTALL
+  - sudo awesome-shell/INSTALL
 
-script: scripts/build-container
+script: sudo scripts/build-container
