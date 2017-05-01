@@ -1,0 +1,15 @@
+sudo: required
+
+language: go
+
+services:
+  - docker
+
+go:
+  - master
+
+before_install:
+  - git clone https://github.com/antontsv/awesome-shell
+  - awesome-shell/INSTALL
+
+script: scripts/build-container
