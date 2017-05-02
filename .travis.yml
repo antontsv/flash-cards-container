@@ -12,4 +12,4 @@ install:
   - git clone https://github.com/antontsv/awesome-shell
   - sudo awesome-shell/INSTALL
 
-script: sudo scripts/build-container
+script: scripts/build-container
