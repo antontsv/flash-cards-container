@@ -1,4 +1,6 @@
-# Flash cards repo container
+# Flash cards repo container 
+[![Build Status](https://travis-ci.org/antontsv/flash-cards-container.svg?branch=master)](https://travis-ci.org/antontsv/flash-cards-container)
+
 Dockerfile in this repo helps you to put
 [flash cards](https://github.com/antontsv/flash-cards) inside a docker cointainer image
 
