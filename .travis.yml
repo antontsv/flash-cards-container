@@ -12,7 +12,7 @@ install:
   - git clone https://github.com/antontsv/awesome-shell
   - sudo awesome-shell/INSTALL
   - scripts/build-container
-  - docker run --name fc -p 80:3031 -d flash-cards
+  - docker run --name fc -p 127.0.0.1:80:3031 -d flash-cards
   - docker ps -a
 
 script: curl -s http://127.0.0.1 | grep 'Make your choice'
