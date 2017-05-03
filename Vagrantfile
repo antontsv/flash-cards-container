@@ -11,7 +11,7 @@ Vagrant.configure(2) do |config|
         d.vm.provision :shell,
               inline: 'PYTHONUNBUFFERED=1 ansible-playbook \
                       /vagrant/ansible/docker.yml -i /vagrant/ansible/hosts/default'
-        d.vm.provision :shell, 
+        d.vm.provision :shell,
               inline: 'cd /vagrant && scripts/build-container && \
                        docker run --name fc --rm -p 80:3031 -d flash-cards && \
                        echo " 🚀  open http://10.100.100.111 in your browser 😎 "'

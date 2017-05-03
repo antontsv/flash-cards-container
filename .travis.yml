@@ -11,5 +11,11 @@ go:
 install:
   - git clone https://github.com/antontsv/awesome-shell
   - sudo awesome-shell/INSTALL
+  - scripts/build-container
+  - docker run --name fc --rm -p 80:3031 -d flash-cards
+  - docker ps -a
 
-script: scripts/build-container
+script: curl -s http://127.0.0.1 | grep 'Make your choice'
+
+after_script:
+  - docker stop fc
