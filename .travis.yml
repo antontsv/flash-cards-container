@@ -13,7 +13,7 @@ install:
   - sudo awesome-shell/INSTALL
   - scripts/build-container
   - ls
-  - docker run --name fc -p 127.0.0.1:80:3031 -d flash-cards
+  - sudo docker run --name fc -p 127.0.0.1:80:3031 -d flash-cards
   - sleep 15
   - docker logs --details fc
   - docker ps -a
