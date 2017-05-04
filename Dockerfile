@@ -9,4 +9,5 @@ RUN chmod ugo+rx /var/www/flash-cards-container
 RUN chmod -R 0777 /var/www/static
 ENV FLASH_CARDS_SERVER_PORT=3031
 EXPOSE $FLASH_CARDS_SERVER_PORT
-CMD cd /var/www/ && whoami && groups && pwd && ls -la && /var/www/flash-cards-container
+RUN cd /var/www/
+CMD ["/var/www/flash-cards-container"]
