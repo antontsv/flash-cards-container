@@ -10,4 +10,4 @@ RUN chmod -R 0777 /var/www/static
 ENV FLASH_CARDS_SERVER_PORT=3031
 EXPOSE $FLASH_CARDS_SERVER_PORT
 WORKDIR /var/www/
-ENTRYPOINT exec /var/www/flash-cards-container
+ENTRYPOINT ["./flash-cards-container"]
