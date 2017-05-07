@@ -38,5 +38,15 @@ sudo docker ps
 sudo docker stop fc
 ```
 
+# Base images
+If you need basic linux - you can [use image](https://github.com/antontsv/flash-cards-container/blob/master/Dockerfile-alpine) that is based on Alpine Linux. If you are looking for the compact image, that deliver only described functionality use [default Dockerfile](https://github.com/antontsv/flash-cards-container/blob/master/Dockerfile)
+
+```sh
+docker image ls
+REPOSITORY                        SIZE
+flash-cards-from-scratch          6.1MB
+flash-cards-from-alpine           16.2MB
+```
+
 # Feedback is appreciated
 You can add your own JavaScript inside the container to tailor your own app. Please let me know about your ideas to use this container image, I am curious where you are able to take this simple idea.
