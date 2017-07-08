@@ -19,17 +19,17 @@ scripts/build-container
 
 If you want to try it out in VM you can use `vagrant up`
 
-Vagrant provision includes:
-* Docker installation inside the VM
-* Building a container inside the VM
-* Run container inside the VM
+Vagrant provision has the following steps:
+* Docker installation
+* Building a container
+* Run the resulting container
 
-If all provision step finish correctly you will see the following message in the end:
+If all provision steps finish correctly you will see the following message in the end:
 ```
 🚀  open http://10.100.100.111 in your browser 😎
 ```
 
-You can expose container once in the VM:
+You can see a container once in the VM:
 ```sh
 vagrant ssh
 sudo docker ps
